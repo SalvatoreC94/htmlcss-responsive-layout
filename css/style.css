@@ -345,6 +345,7 @@ a.icon-menu {
 }
 
 #about .col-80 {
+
     padding-right: 40px;
     color: var(--bg-color3);
 }
@@ -378,6 +379,7 @@ footer .container {
 
 #free .container .box-text h4 {
     color: var(--bg-color5);
+
 }
 
 #free .container .box-text .btn {

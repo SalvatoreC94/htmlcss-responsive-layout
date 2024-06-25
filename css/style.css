@@ -1,5 +1,215 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/* Color */
+:root {
+    --bg-color1: #0084fd;
+    --bg-color2: #b5ddff;
+    --bg-color3: #9792e4;
+    --bg-color4: #333333;
+    --bg-color5: #fdc15f;
+    --bg-color6: #ffffff;
+    --bg-color7: #000000;
+}
+
+/* General */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+#demo-app,
+#planning,
+#partners,
+#benefits,
+#about,
+#free {
+    padding: 60px 0;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 60px;
+}
+
+.flex {
+    display: flex;
+    gap: 12px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.space-b {
+    justify-content: space-between;
+}
+
+a,
+.logo {
+    all: unset;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.w-30 {
+    width: calc((100% - 24px) / 3);
+    flex-shrink: 0;
+    border-radius: 50px;
+    padding: 25px;
+}
+
+.w-70 {
+    width: calc(((100% - 24px) / 3) * 2 + 12px);
+    flex-shrink: 0;
+    border-radius: 50px;
+    padding: 25px 25px 0;
+}
+
+.col-50 {
+    width: calc((100% / 2) - 12px);
+}
+
+.row {
+    margin: 12px 0;
+}
+
+.only-tp {
+    display: none;
+}
+
+.image {
+    width: 100%;
+    display: block;
+}
+
+.letter-space {
+    letter-spacing: 3px;
+}
+
+.text-marker {
+    text-decoration-line: underline;
+}
+
+/* HEADER */
+#navbar {
+    background-color: var(--bg-color1);
+    padding: 10px 0;
+    color: var(--bg-color6);
+    font-size: 14px;
+}
+
+#navbar .flex {
+    align-items: center;
+}
+
+#navbar .btn {
+    background-color: var(--bg-color6);
+    color: var(--bg-color7);
+}
+
+a.icon-menu {
+    display: none;
+}
+
+
+/* MAIN */
+
+#demo-app .flex {
+    gap: 12px;
+}
+
+#demo-app .container .row .w-70 a.btn {
+    background-color: var(--bg-color1);
+    color: var(--bg-color6);
+    padding: 8px 48px;
+}
+
+#demo-app .col-50>a.btn.letter-space {
+    margin: 40px 0;
+}
+
+#demo-app .container h3 {
+    color: var(--bg-color1);
+    margin-bottom: 36px;
+}
+
+#demo-app .container p {
+    color: var(--bg-color4);
+    font-weight: bold;
+}
+
+#demo-app .container .row .w-70,
+#demo-app .container .row .w-30 {
+    background-color: var(--bg-color2);
+}
+
+#demo-app .container .row .w-30 i {
+    color: var(--bg-color1);
+    font-size: 80px;
+    margin: 36px;
+}
+
+#planning {
+    background-color: var(--bg-color3);
+}
+
+#planning .container .col-50 h2 {
+    padding: 100px 0;
+}
+
+#planning .container .col-50:first-child {
+    color: var(--bg-color6);
+    margin: 0 0 0 100px;
+    padding: 20px;
+}
+
+#planning .container.flex {
+    align-items: end;
+    gap: 40px;
+}
+
+#planning .container .col-50:last-child {
+    color: var(--bg-color7);
+    background-color: var(--bg-color6);
+    padding: 40px;
+    border-radius: 50px;
+}
+
+#planning .container div.col-50 {
+    width: 50%;
+}
+
+#planning .container .col-50:last-child .image {
+    margin-bottom: 24px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#planning .container .col-50:last-child .box-text h3,
+#planning .container .col-50:last-child .box-text p {
+    margin-bottom: 24px;
+}
+
+#planning .container .col-50 .box-text i {
+    background-color: #9792e4;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+
+
+
+#demo-app .container .flex {
+    flex-wrap: wrap;
 }
